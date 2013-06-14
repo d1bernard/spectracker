@@ -8,9 +8,9 @@
 
 .dbd-scroll { 
     overflow: auto;
-    height: 20%;
-    min-height: 20%;
-    max-height: 20%;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
 }
 .dbd-no-scoll{
     overflow: no-display;
@@ -20,6 +20,8 @@
     max-width: 100%;
 
 }
+
+
 html {
     height: 100%;
     max-height: 100%;
@@ -28,11 +30,14 @@ html {
 }
 
 body {
-    margin-top: 0px;
-    height: 100%;
+    padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+    bottom:0;
+    top:0;
+    left:0;
+    right:0;
+    position:absolute;
+    height: auto;
     max-height: 100%;
-    width: 100%;
-    max-width: 100%;
 
 }
 

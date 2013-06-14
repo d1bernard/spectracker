@@ -31,55 +31,38 @@ $('document').ready(function() {
 //        alert(data.rslt.o.attr('id'));
     });
     rq_navtree.jstree({
-       "types": {
-         "valid_children":"all",
-         "types": {
-             "default": {
-                 "icon": {
-                            "image" : "img/bootstrap/glyphicons-halflings.png",
-                            "position": "-24px -24px"
-                         }
-             },
-             "project": {
-                        "icon": {
-                            "image" : "img/bootstrap/glyphicons-halflings.png",
-                            "position": "-48px -120px"
-                         }
-
-             },
-             "folder": {
-                        "icon": {
-                            "image" : "img/bootstrap/glyphicons-halflings.png",
-                            "position": "-384px -120px"
-                         }
-
-             },
-             "leaf": {
-                        "icon": {
-                            "image" : "img/bootstrap/glyphicons-halflings.png",
-                            "position": "-24px -24px"
-                         }
-             }
-         }
-       },
-               
-//        "json_data" : {
-//            "data" : [
-//                {
-//                    "data" : "A node",
-//                    "metadata" : { id : 23 },
-//                    "children" : [ "Child 1", "A Child 2" ]
-//                },
-//                {
-//                    "attr" : { "id" : "li.node.id1" },
-//                    "data" : {
-//                        "title" : "Long format demo",
-//                        "attr" : { "href" : "#" }
-//                    }
-//                }
-//            ]
-//        },
-        "json_data": {
+//       "types": {
+//         "valid_children":"all",
+//         "types": {
+//             "default": {
+////                 "icon": {
+////                            "image" : "img/bootstrap/glyphicons-halflings.png",
+////                            "position": "-24px -24px"
+////                         }
+//             },
+//             "project": {
+////                        "icon": {
+////                            "image" : "img/bootstrap/glyphicons-halflings.png",
+////                            "position": "-48px -120px"
+////                         }
+//
+//             },
+//             "folder": {
+////                        "icon": {
+////                            "image" : "img/bootstrap/glyphicons-halflings.png",
+////                            "position": "-384px -120px"
+////                         }
+//
+//             },
+//             "leaf": {
+////                        "icon": {
+////                            "image" : "img/bootstrap/glyphicons-halflings.png",
+////                            "position": "-24px -24px"
+////                         }
+//             }
+//         }
+//       },
+       "json_data": {
             "data": [{
                 "data" :{
                     "title": "Project"
