@@ -26,9 +26,9 @@ $('document').ready(function() {
     var rq_navtree=$("#rq_navtree");
     //binding on move event
     rq_navtree.bind("move_node.jstree",function(event,data){
-        alert(event);
-        alert(data.rslt.o.html());
-        alert(data.rslt.o.attr('id'));
+//        alert(event);
+//        alert(data.rslt.o.html());
+//        alert(data.rslt.o.attr('id'));
     });
     rq_navtree.jstree({
        "types": {
