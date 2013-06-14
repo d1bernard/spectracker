@@ -1,0 +1,35 @@
+/* 
+    Document   : custom
+    Created on : 26 mai 2013, 19:02:08
+    Author     : dominique
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.dbd-scroll { 
+    overflow: auto;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+.dbd-no-scoll{
+    overflow: no-display;
+    top: 60px;
+    bottom: 0;
+}
+html {
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+    max-width: 100%;
+}
+
+body {
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+    max-width: 100%;
+
+}
+
+
