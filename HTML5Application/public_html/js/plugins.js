@@ -32,33 +32,32 @@ $('document').ready(function() {
     });
     rq_navtree.jstree({
        "types": {
-         "valid_children":"all",
+         "valid_children":["project"],
          "types": {
-             "default": {
-                 "icon": {
-                            "image" : "img/bootstrap/glyphicons-halflings.png",
-                            "position": "-24px -24px"
-                         }
-             },
+             "valid_children": ["project"],
+                 
              "project": {
                         "icon": {
                             "image" : "img/bootstrap/glyphicons-halflings.png",
                             "position": "-48px -120px"
-                         }
+                         },
+                         "valid_children": ["folder","document"]
 
              },
              "folder": {
                         "icon": {
                             "image" : "img/bootstrap/glyphicons-halflings.png",
                             "position": "-384px -120px"
-                         }
+                         },
+                         "valid_children": ["folder","document"]
 
              },
-             "leaf": {
-//                        "icon": {
-//                            "image" : "img/bootstrap/glyphicons-halflings.png",
-//                            "position": "-24px -24px"
-//                         }
+             "document": {
+                        "icon": {
+                            "image" : "img/bootstrap/glyphicons-halflings.png",
+                            "position": "-24px -24px"
+                         },
+                         "valid_children": []
              }
          }
        },
@@ -106,7 +105,7 @@ $('document').ready(function() {
                                                     },
                                                     "attr": {
                                                         "id": "document.3",
-                                                        "rel":"leaf"
+                                                        "rel":"document"
                                                     }
                                                 }
                                         ]
@@ -118,7 +117,7 @@ $('document').ready(function() {
                                         },
                                         "attr": {
                                             "id": "document.2",
-                                            "rel":"leaf"
+                                            "rel":"document"
                                         }
                                     }
                             ]
@@ -130,7 +129,7 @@ $('document').ready(function() {
                             },
                             "attr": {
                                 "id": "document.1",
-                                "rel":"leaf"
+                                "rel":"document"
                             }
                         }
                 ]
