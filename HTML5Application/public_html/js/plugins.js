@@ -163,6 +163,25 @@ $('document').ready(function() {
 (function() {
 
 tinymce.init({
-    selector: "textarea.dbd-richtext"
+    selector: "textarea.dbd-richtext",
+    skin: "lightgray2",
+    
+    toolbar1: "undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | print preview media fullpage | forecolor backcolor",
+    plugins: [
+         "advlist autolink link image lists charmap print preview hr anchor pagebreak spellchecker",
+         "searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking",
+         "table contextmenu directionality emoticons template paste textcolor"
+   ],
+   menubar: "tools table format view insert edit",
+   statusbar: false
  });
+ tinymce.on('AddEditor', function(e) {
+     var editor;
+    console.log(e.command, e.ui, e.value);
+    editor=e.editor;
+    editor.on('mceFullScreen',function(e){
+        console.log(e.command, e.ui, e.value);
+    });
+    
+});
 })();

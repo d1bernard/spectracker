@@ -55,7 +55,13 @@
               <a href="#about"><i class="icon-briefcase"></i> Upload</a>
               
               <form action="sendData" method="POST">
-                <textarea class="dbd-richtext"></textarea>
+                  <fieldset>
+                    <label for="reqId">Id <input type="text" id="reqId" name="reqId"></label>
+                    <label for="reqLabel">Label <input type="text" id="reqLabel" name="reqLabel"></label>
+                    <label for="reqId">Version <input type="text" id="reqVersion" name="reqVersion"></label>
+                    <label for="reqContent">Text</label>
+                    <textarea class="dbd-richtext" name="reqContent" id="reqContent"></textarea>
+                  </fieldset>
               </form>
             </div>
             

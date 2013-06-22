@@ -41,4 +41,8 @@ body {
 
 }
 
+mce-fullscreen {
+    z-index: 3000;
+}
+
 
