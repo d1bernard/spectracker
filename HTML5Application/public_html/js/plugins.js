@@ -165,7 +165,6 @@ $('document').ready(function() {
 tinymce.init({
     selector: "textarea.dbd-richtext",
     skin: "lightgray2",
-    
     toolbar1: "undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | print preview media fullpage | forecolor backcolor",
     plugins: [
          "advlist autolink link image lists charmap print preview hr anchor pagebreak spellchecker",
@@ -179,9 +178,6 @@ tinymce.init({
      var editor;
     console.log(e.command, e.ui, e.value);
     editor=e.editor;
-    editor.on('mceFullScreen',function(e){
-        console.log(e.command, e.ui, e.value);
-    });
     
 });
 })();
